@@ -24,7 +24,7 @@
     },
     "toggle-visibility": {
       "suggested_key": {
-        "default": "Ctrl+Shift+Q"
+        "default": "Alt+Z"
       },
       "description": "Toggle question and multiple-choice option visibility"
     }

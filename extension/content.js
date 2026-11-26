@@ -152,7 +152,7 @@
     }
   }
 
-  // Ctrl+Shift+Q hides/shows only the extension's own host element.
+  // Alt+Z hides/shows only the extension's own host element.
   // It never changes visibility or styles of the webpage or its MCQ content.
   function togglePanelVisibility() {
     if (!host?.isConnected) {
