@@ -1,6 +1,6 @@
 # Ask Gemini AutoScan
 
-Upgrade of the existing Ask Gemini Screen Scanner. The keyboard shortcut `Ctrl+Shift+Q` captures the visible viewport and displays answers in a movable panel on the same webpage. OCR uses Tesseract.js locally; only extracted text and limited nearby accessible DOM text are sent to the local Node.js backend. Screenshots are not sent to Gemini.
+Upgrade of the existing Ask Gemini Screen Scanner. The keyboard shortcut `Ctrl+.` captures the visible viewport and displays answers in a movable panel on the same webpage. OCR uses Tesseract.js locally; only extracted text and limited nearby accessible DOM text are sent to the local Node.js backend. Screenshots are not sent to Gemini.
 
 ## Requirements
 - Current Google Chrome
@@ -19,11 +19,11 @@ Upgrade of the existing Ask Gemini Screen Scanner. The keyboard shortcut `Ctrl+S
 1. Open `chrome://extensions`.
 2. Enable **Developer mode**.
 3. Choose **Load unpacked** and select the project's `extension` folder (not the project root).
-4. Open `chrome://extensions/shortcuts`, find Ask Gemini AutoScan, and assign `Ctrl+Shift+Q` if Chrome has another extension using it.
+4. Open `chrome://extensions/shortcuts`, find Ask Gemini AutoScan, and assign `Ctrl+.` (and `Alt+Z` for toggle visibility) if Chrome has another extension using them.
 
 ## 3. Use it
 1. Open an ordinary webpage containing a question and its options, if any.
-2. Press `Ctrl+Shift+Q` (or click the extension toolbar icon).
+2. Press `Ctrl+.` (or click the extension toolbar icon).
 3. Keep the question visible while it captures and scans the viewport.
 4. Read the in-page panel. Use **Copy Answer**, **Scan Again**, minimize, drag the header, or close the panel. Check **Answer only the first detected question** to limit output.
 

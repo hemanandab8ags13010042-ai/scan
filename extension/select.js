@@ -22,7 +22,7 @@ async function loadScreenshot() {
     return;
   }
   if (!data.scanScreenshot) {
-    setStatus("No screenshot found. Press Ctrl+Shift+Q on a normal webpage to start.");
+    setStatus("No screenshot found. Press Ctrl+. on a normal webpage to start.");
     return;
   }
   screenshotImage.onload = () => {
@@ -116,7 +116,7 @@ scanBtn.addEventListener("click", async () => {
     );
     const image = crop.toDataURL("image/png");
     const stored = await chrome.storage.local.get(["serverUrl"]).catch(() => ({}));
-    const serverUrl = (stored?.serverUrl || "https://scan-lime.vercel.app").replace(/\/+$/, "");
+    const serverUrl = (stored?.serverUrl || "https://scan-two-blush.vercel.app").replace(/\/+$/, "");
     const response = await fetch(`${serverUrl}/api/scan`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },

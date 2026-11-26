@@ -282,7 +282,7 @@ app.post("/api/autoscan", async (req, res) => {
   try {
     const imageData = req.body?.image;
     if (typeof imageData !== "string" || !/^data:image\/(png|jpeg|jpg|webp);base64,[A-Za-z0-9+/=]+$/.test(imageData)) {
-      return res.status(400).json({ error: "A valid PNG/JPEG screenshot is required. Press Ctrl+Shift+Q and retry." });
+      return res.status(400).json({ error: "A valid PNG/JPEG screenshot is required. Press Ctrl+. and retry." });
     }
     const match = imageData.match(/^data:image\/(png|jpeg|jpg|webp);base64,([A-Za-z0-9+/=]+)$/);
     const mimeType = match[1] === "jpg" ? "image/jpeg" : `image/${match[1]}`;

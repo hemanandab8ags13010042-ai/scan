@@ -1,4 +1,4 @@
-const DEFAULT_SERVER = "https://scan-lime.vercel.app";
+const DEFAULT_SERVER = "https://scan-two-blush.vercel.app";
 const runningTabs = new Set();
 
 function normalizeServerUrl(raw) {
